@@ -22,6 +22,7 @@ The resultant colors match the colors displayed in the map legend, which uses th
 | [DeepPink](https://www.w3schools.com/colors/color_tryit.asp?color=DeepPink) | `.leaflet-color-deeppink {filter: hue-rotate(115deg) brightness(100%) saturate(130%);}` | ![0deeppink](https://github.com/StephanieMussi/leaflet-huerotate-markers/assets/44252274/41d2f343-80c3-4b2c-b830-d201e9ac5867) |
 | [Magenta](https://www.w3schools.com/colors/color_tryit.asp?color=Magenta) | `.leaflet-color-magenta {filter: hue-rotate(80deg) brightness(110%) saturate(180%);}` | ![0magenta](https://github.com/StephanieMussi/leaflet-huerotate-markers/assets/44252274/9d0d943f-2a9d-4dac-8553-64f57431a103) |
 | [Red](https://www.w3schools.com/colors/color_tryit.asp?color=Red) | `.leaflet-color-red {filter: hue-rotate(150deg) brightness(100%) saturate(250%);}` | ![0red](https://github.com/StephanieMussi/leaflet-huerotate-markers/assets/44252274/3417c8ef-8ba6-4851-9f9f-72e12128a566)|
+| [Cyan](https://www.w3schools.com/colors/color_tryit.asp?color=Cyan) | `.leaflet-color-cyan {filter: hue-rotate(330deg) brightness(170%) saturate(180%);}` | ![0cyan](https://github.com/StephanieMussi/leaflet-huerotate-markers/assets/44252274/5e33f755-5757-4a65-901a-bf5e193d7cc5) |
   
 ### References:
   
