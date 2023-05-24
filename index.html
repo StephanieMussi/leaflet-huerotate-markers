@@ -62,6 +62,10 @@
         filter: hue-rotate(150deg) brightness(100%) saturate(250%);
         }
         
+        .leaflet-color-cyan {
+        filter: hue-rotate(330deg) brightness(170%) saturate(180%);
+        }
+        
         .leaflet-container {  /* all maps */
             width:  78vw;
             height: 75vh;
@@ -118,7 +122,7 @@
             var legend = L.control({ position: 'bottomright' });
             legend.onAdd = function (map) {
                 var div = L.DomUtil.create('div', 'info legend'),
-                    grades = ["orchid", "blueviolet", "cornflowerblue", "saddlebrown", "salmon", "indianred", "darkorange", "green", "dimgrey", "deeppink", "magenta", "red"],
+                    grades = ["orchid", "blueviolet", "cornflowerblue", "saddlebrown", "salmon", "indianred", "darkorange", "green", "dimgrey", "deeppink", "magenta", "red", "cyan"],
                     labels = [];
                 for (var i = 0; i < grades.length; i++) {
                     div.innerHTML +=
@@ -155,6 +159,8 @@
                 return 'leaflet-marker-icon leaflet-color-magenta';
             } else if (color == "red") {
                 return 'leaflet-marker-icon leaflet-color-red';
+            } else if (color == "cyan") {
+                return 'leaflet-marker-icon leaflet-color-cyan';
             } else {
                 return 'leaflet-marker-icon leaflet-color-defaultblue';
             }
