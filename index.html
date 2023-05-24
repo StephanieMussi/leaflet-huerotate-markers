@@ -51,5 +51,69 @@
         }
     </style>
 
+    <div>
+        {% leaflet_map "main" callback="window.main_map_init" %}
+    </div>
+
+    <script type="text/javascript">
+        
+        function main_map_init(map, options) {
+            var data = JSON.parse('{{json_file| escapejs }}');
+
+            var layerGroup = L.geoJSON(data, {
+                pointToLayer: function (feature, latlng) {
+                    var smallIcon = L.icon({
+                        iconUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-icon.png',
+                        iconSize: [25, 41], 
+                        iconAnchor: [12, 41],
+                        popupAnchor: [0, -38] 
+                    });
+                    smallIcon.options.className = get_color_name(feature.properties.color);
+                    return L.marker(latlng, { icon: smallIcon });
+                }
+            }).addTo(map);
+
+            map.fitBounds(layerGroup.getBounds());
+
+            var legend = L.control({ position: 'bottomright' });
+            legend.onAdd = function (map) {
+                var div = L.DomUtil.create('div', 'info legend'),
+                    grades = ["orchid", "blueviolet", "cornflowerblue", "saddlebrown", "salmon", "indianred", "darkorange", "green", "dimgrey"],
+                    labels = [];
+                for (var i = 0; i < grades.length; i++) {
+                    div.innerHTML +=
+                        '<i style="background:' + grades[i] + '"></i> ' +
+                        grades[i] + '<br>';
+                }
+                return div;
+            };
+            legend.addTo(map);
+        }
+
+        function get_color_name(color) {
+            if (color == "orchid") {
+                return 'leaflet-marker-icon leaflet-color-orchid';
+            } else if (color == "blueviolet") {
+                return 'leaflet-marker-icon leaflet-color-blueviolet';
+            } else if (color == "cornflowerblue") {
+                return 'leaflet-marker-icon leaflet-color-cornflowerblue';
+            } else if (color == "saddlebrown") {
+                return 'leaflet-marker-icon leaflet-color-saddlebrown';
+            } else if (color == "salmon") {
+                return 'leaflet-marker-icon leaflet-color-salmon';
+            } else if (color == "indianred") {
+                return 'leaflet-marker-icon leaflet-color-indianred';
+            } else if (color == "darkorange") {
+                return 'leaflet-marker-icon leaflet-color-darkorange';
+            } else if (color == "green") {
+                return 'leaflet-marker-icon leaflet-color-green';
+            } else if (color == "dimgrey") {
+                return 'leaflet-marker-icon leaflet-color-dimgrey';
+            } else {
+                return 'leaflet-marker-icon leaflet-color-defaultblue';
+            }
+        }
+    </script>
+
 </body>
 </html>
