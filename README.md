@@ -19,8 +19,9 @@ The resultant colors match the colors displayed in the map legend, which uses th
 | [DarkOrange](https://www.w3schools.com/colors/color_tryit.asp?color=DarkOrange) | `.leaflet-color-darkorange {filter: hue-rotate(200deg) brightness(135%) saturate(400%);}` | ![0darkorange](https://github.com/StephanieMussi/leaflet-huerotate-markers/assets/44252274/637d1cd3-6e74-4efb-adf0-76469183ff72) |
 | [Green](https://www.w3schools.com/colors/color_tryit.asp?color=Green) | `.leaflet-color-green {filter: hue-rotate(270deg) brightness(100%) saturate(100%);}` | ![0green](https://github.com/StephanieMussi/leaflet-huerotate-markers/assets/44252274/a7b2c47f-782d-4a68-b470-ed3f1372dc42) |
 | [DimGrey](https://www.w3schools.com/colors/color_tryit.asp?color=DimGrey) | `.leaflet-color-dimgrey {filter: hue-rotate(0deg) brightness(110%) saturate(0%);}` | ![0dimgrey](https://github.com/StephanieMussi/leaflet-huerotate-markers/assets/44252274/dabf6707-872a-4990-abf5-1bf4e334f44b) |
-
-
+| [DeepPink](https://www.w3schools.com/colors/color_tryit.asp?color=DeepPink) | `.leaflet-color-deeppink {filter: hue-rotate(115deg) brightness(100%) saturate(130%);}` | ![0deeppink](https://github.com/StephanieMussi/leaflet-huerotate-markers/assets/44252274/41d2f343-80c3-4b2c-b830-d201e9ac5867) |
+| [Magenta](https://www.w3schools.com/colors/color_tryit.asp?color=Magenta) | `.leaflet-color-magenta {filter: hue-rotate(80deg) brightness(110%) saturate(180%);}` | ![0magenta](https://github.com/StephanieMussi/leaflet-huerotate-markers/assets/44252274/9d0d943f-2a9d-4dac-8553-64f57431a103) |
+| [Red](https://www.w3schools.com/colors/color_tryit.asp?color=Red) | `.leaflet-color-red {filter: hue-rotate(150deg) brightness(100%) saturate(250%);}` | ![0red](https://github.com/StephanieMussi/leaflet-huerotate-markers/assets/44252274/3417c8ef-8ba6-4851-9f9f-72e12128a566)|
   
 ### References:
   
