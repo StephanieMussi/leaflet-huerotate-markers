@@ -1,5 +1,5 @@
 # Leaflet Hue Rotate Markers
-## Change colors of the Leaflet default marker without any additional library
+## Change colors of the Leaflet marker without any additional library
 
 This repository provides the <style> definition that changes the color of Leaflet markers with the following parameter:
   - hue-rotate(deg)
