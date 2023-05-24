@@ -33,6 +33,10 @@
         .leaflet-color-salmon {
             filter: hue-rotate(150deg) brightness(150%) saturate(90%);
         }
+        
+        .leaflet-color-khaki {
+        filter: hue-rotate(210deg) brightness(185%) saturate(35%);
+        }
 
         .leaflet-color-indianred {
             filter: hue-rotate(150deg) brightness(110%) saturate(60%);
@@ -72,6 +76,10 @@
         
         .leaflet-color-lime {
         filter: hue-rotate(280deg) brightness(150%) saturate(150%);
+        }
+        
+        .leaflet-color-orangered {
+        filter: hue-rotate(170deg) brightness(110%) saturate(130%);
         }
         
         .leaflet-container {  /* all maps */
@@ -130,7 +138,7 @@
             var legend = L.control({ position: 'bottomright' });
             legend.onAdd = function (map) {
                 var div = L.DomUtil.create('div', 'info legend'),
-                    grades = ["orchid", "blueviolet", "cornflowerblue", "saddlebrown", "salmon", "indianred", "darkorange", "green", "dimgrey", "deeppink", "magenta", "red", "cyan", "yellow", "lime"],
+                    grades = ["orchid", "blueviolet", "cornflowerblue", "saddlebrown", "salmon", "khaki", "indianred", "darkorange", "green", "dimgrey", "deeppink", "magenta", "red", "cyan", "yellow", "lime", "orangered"],
                     labels = [];
                 for (var i = 0; i < grades.length; i++) {
                     div.innerHTML +=
@@ -153,6 +161,8 @@
                 return 'leaflet-marker-icon leaflet-color-saddlebrown';
             } else if (color == "salmon") {
                 return 'leaflet-marker-icon leaflet-color-salmon';
+            } else if (color == "khaki") {
+                return 'leaflet-marker-icon leaflet-color-khaki';
             } else if (color == "indianred") {
                 return 'leaflet-marker-icon leaflet-color-indianred';
             } else if (color == "darkorange") {
@@ -173,7 +183,9 @@
                 return 'leaflet-marker-icon leaflet-color-yellow';
             } else if (color == "lime") {
                 return 'leaflet-marker-icon leaflet-color-lime';
-            }  else {
+            } else if (color == "orangered") {
+                return 'leaflet-marker-icon leaflet-color-orangered';
+            } else {
                 return 'leaflet-marker-icon leaflet-color-defaultblue';
             }
         }
