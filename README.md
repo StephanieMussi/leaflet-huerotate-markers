@@ -8,6 +8,8 @@ This repository provides the <style> definition that changes the color of Leafle
 
 The resultant colors match the colors displayed in the map legend, which uses the names of HTML color names that are supported by all browsers (https://www.w3schools.com/colors/colors_names.asp). 
 
+![plot](file:///home/navdev2/Pictures/0orchid-1.png)
+  
 ### References:
   
 - Leaflet, an open-source JavaScript library for mobile-friendly interactive maps: https://leafletjs.com/
