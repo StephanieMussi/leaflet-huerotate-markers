@@ -5,7 +5,8 @@ This repository provides the <style> definition that changes the color of Leafle
   - hue-rotate(deg)
   - brightness(%)
   - saturate(%)
-The resultant colors match the color displayed in the map legend, which uses the names of HTML color names that are supported by all browsers (https://www.w3schools.com/colors/colors_names.asp). 
+
+The resultant colors match the colors displayed in the map legend, which uses the names of HTML color names that are supported by all browsers (https://www.w3schools.com/colors/colors_names.asp). 
   
 Leaflet: https://leafletjs.com/
 
