@@ -1,5 +1,5 @@
 # Leaflet Hue Rotate Markers
-## To change colors of the Leaflet default marker without any additional library
+## Change colors of the Leaflet default marker without any additional library
 
 This repository provides the <style> definition that changes the color of Leaflet markers with the following parameter:
   - hue-rotate(deg)
@@ -10,5 +10,5 @@ The resultant colors match the colors displayed in the map legend, which uses th
 
 ### References:
   
-- Leaflet: an open-source JavaScript library for mobile-friendly interactive maps https://leafletjs.com/
+- Leaflet, an open-source JavaScript library for mobile-friendly interactive maps: https://leafletjs.com/
 - W3 Schools HTML Color Names: https://www.w3schools.com/colors/colors_names.asp
