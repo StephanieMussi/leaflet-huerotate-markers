@@ -8,7 +8,12 @@ This repository provides the <style> definition that changes the color of Leafle
 
 The resultant colors match the colors displayed in the map legend, which uses the names of HTML color names that are supported by all browsers (https://www.w3schools.com/colors/colors_names.asp). 
 
-![0orchid-1](https://github.com/StephanieMussi/leaflet-huerotate-markers/assets/44252274/a5e5e406-0891-42ad-adc2-991a701c1f78)
+| HTML color name  | Hue rotate style | Demo |
+| ------------- | ------------- | ------------- |
+| [Orchid](https://www.w3schools.com/colors/color_tryit.asp?color=Orchid)  | `.leaflet-color-orchid {filter: hue-rotate(80deg) brightness(130%) saturate(60%);}` | ![0orchid-1](https://github.com/StephanieMussi/leaflet-huerotate-markers/assets/44252274/a5e5e406-0891-42ad-adc2-991a701c1f78)  |
+
+
+
   
 ### References:
   
